@@ -1,0 +1,349 @@
+extends layout
+
+block content
+  
+  nav#top.navbar.navbar-expand-sm
+    .limiter
+      a.navbar-brand(href='#') &lt; DrumDev /&gt;
+      button.navbar-toggler.collapsed(type='button' data-toggle='collapse' data-target='#navbarText' aria-controls='navbarText' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarText.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item
+            a.nav-link.smooth-scroll(href='#what-we-do') What We Do
+          li.nav-item
+            a.nav-link.smooth-scroll(href='#who-we-are') Who We Are
+          li.nav-item
+            a.nav-link.smooth-scroll(href='#our-work') Our Work
+          li.nav-item
+            a.nav-link.smooth-scroll(href='#latest-news') News
+          li.nav-item
+            a.nav-link.smooth-scroll(href='#contact-us') Contact
+  #hero.container-fluid.content
+    .limiter
+      h1 Web Development Drumchapel
+      a.smooth-scroll.btn.btn-secondary.drum-btn(href='#what-we-do') Find out more
+  #what-we-do.container-fluid.content
+    .limiter
+      h2 What we do
+      .row
+        .col-sm-6.col-lg-3
+          h3 We make websites
+          ul
+            li
+              p Web Design
+            li
+              p Web Development
+            li
+              p Websites from scratch
+            li
+              p CMS sites and blogs
+          br
+        .col-sm-6.col-lg-3
+          h3 &apos;Efficient&apos; websites
+          ul
+            li
+              p Fully responsive websites
+            li
+              p Sites that work on all browsers
+            li
+              p Always watching for new trends
+            li
+              p Cheap domains &amp; hosting
+          br
+        .col-sm-6.col-lg-3
+          h3 Awesome SEO
+          ul
+            li
+              p Optimize all files
+            li
+              p Super fast page speed
+            li
+              p Improve Google search rankings
+            li
+              p Help with Google Analytics
+          br
+        .col-sm-6.col-lg-3
+          h3 And more...
+          ul
+            li
+              p Help with programming
+            li
+              p Brand identity advice
+            li
+              p Help out with useful resources
+            li
+              p Answer web development questions
+          br
+        p.text-center
+          | This is not a business. We are not looking for work... but we don&apos;t mind helping people where we can.
+      a.smooth-scroll.btn.btn-secondary.drum-btn(href='#who-we-are') Find out more
+  #who-we-are.container-fluid.content.blue-bg
+    .limiter
+      h2 Who we are
+      .row
+        .col-lg-6
+          h3 Zander
+          img.dp.rounded(src='/img/dp-z.jpg' alt='zander')
+          h4 Web Developer
+          #dd-trigger-z1(role='tablist')
+            .card
+              #dd-h-z1.card-header(role='tab')
+                h5.mb-0
+                  a(data-toggle='collapse' href='#dd-content-z1' aria-expanded='true' aria-controls='dd-content-z1') Education
+              #dd-content-z1.collapse(role='tabpanel' aria-labelledby='dd-h-z1' data-parent='#dd-trigger-z1')
+                .card-body.text-left
+                  p
+                    | Zander graduated from Glasgow Caledonian University in 2016 with an Honours degree in Web Systems Development. In the four years he covered a variety of modules from different computing backgrounds such as:
+                  br
+                  ul
+                    li
+                      p Computer Games Design
+                    li
+                      p Computer Games Programming
+                    li
+                      p Web Design
+                    li
+                      p Web Programming
+                    li
+                      p IT Project Management
+                    li
+                      p Computer Architecture
+                    li
+                      p Database Systems Development
+                    li
+                      p Mobile Device Programming
+                    li
+                      p Cloud Platform Development
+                    li
+                      p and more...
+          #dd-trigger-z2(role='tablist')
+            .card
+              #dd-h-z2.card-header(role='tab')
+                h5.mb-0
+                  a(data-toggle='collapse' href='#dd-content-z2' aria-expanded='true' aria-controls='dd-content-z2') Experience
+              #dd-content-z2.collapse(role='tabpanel' aria-labelledby='dd-h-z2' data-parent='#dd-trigger-z2')
+                .card-body.text-left
+                  p
+                    | Zander has worked as a Front End Web Developer since April 2017, which means he now has 1 year of professional experience. In this time he has received help from other developers with more experience than him and is learning more and more every day he works.
+          #dd-trigger-z3(role='tablist')
+            .card
+              #dd-h-z3.card-header(role='tab')
+                h5.mb-0
+                  a(data-toggle='collapse' href='#dd-content-z3' aria-expanded='true' aria-controls='dd-content-z3') Other
+              #dd-content-z3.collapse(role='tabpanel' aria-labelledby='dd-h-z3' data-parent='#dd-trigger-z3')
+                .card-body.text-left
+                  p
+                    | Zander loves learning to further his knowledge in Web Development and uses various online learning platforms. Some courses he has completed are:
+                  br
+                  ul
+                    li
+                      p NodeJS Basics
+                    li
+                      p Express Basics
+                    li
+                      p Npm Basics
+                    li
+                      p Bootstrap4 Basics
+                    li
+                      p ReactJS Basics
+                    li
+                      p Design Foundations
+                    li
+                      p SEO Basics
+                    li
+                      p How to Freelance
+                    li
+                      p Copyright Basics
+                    li
+                      p JQuery Plugins
+                    li
+                      p Typography Basics
+                    li
+                      p Brand Identity Basics
+                    li
+                      p Website Optimization
+                    li
+                      p and more...
+                  br
+                  p
+                    | His weakness is graphics design and is limited to online resources for icons etc. He would really love to get experienced with Adobe Illustrator.
+        .d-block.d-lg-none.temp-spacer
+        .col-lg-6
+          h3 William
+          img.dp.rounded(src='/img/dp-w.jpg' alt='wully')
+          h4 Student
+          #dd-trigger-w1(role='tablist')
+            .card
+              #dd-h-w1.card-header(role='tab')
+                h5.mb-0
+                  a(data-toggle='collapse' href='#dd-content-w1' aria-expanded='true' aria-controls='dd-content-w1') Education
+              #dd-content-w1.collapse(role='tabpanel' aria-labelledby='dd-h-z1' data-parent='#dd-trigger-w1')
+                .card-body.text-left
+                  p
+                    | William has always had an interest in computers and is currently studying Software Development at City of Glasgow College in a course that leads on to University.
+                  p So far he has covered modules such as:
+                  br
+                  ul
+                    li
+                      p Software Development
+                    li
+                      p Developing Mobile Technology
+                    li
+                      p Games Design
+                    li
+                      p Games Development
+                    li
+                      p Project Management
+                    li
+                      p Professionalism &amp; Ethics
+                    li
+                      p And more...
+                    br
+          #dd-trigger-w2(role='tablist')
+            .card
+              #dd-h-w2.card-header(role='tab')
+                h5.mb-0
+                  a(data-toggle='collapse' href='#dd-content-w2' aria-expanded='true' aria-controls='dd-content-w2') Experience
+              #dd-content-w2.collapse(role='tabpanel' aria-labelledby='dd-h-w2' data-parent='#dd-trigger-w2')
+                .card-body.text-left
+                  p
+                    | William has self taught himself alot of things and has experience using Linux, automation bots, and managing servers.
+                  p In addition to this:
+                  br
+                  ul
+                    li
+                      p He helps to moderate online forums and websites.
+                    li
+                      p
+                        | He studied modifications for games which allowed for more functionality from the Xbox 360.
+                    li
+                      p
+                        | He could modify control pads and create custom servers of games that were tweaked to his own liking.
+                    li
+                      p He is good at finding work arounds to gain access to secure content.
+                    li
+                      p
+                        | He has studied black hat tactics which have strengthened his cyber security skills.
+          #dd-trigger-w3(role='tablist')
+            .card
+              #dd-h-w3.card-header(role='tab')
+                h5.mb-0
+                  a(data-toggle='collapse' href='#dd-content-w3' aria-expanded='true' aria-controls='dd-content-w3') Other
+              #dd-content-w3.collapse(role='tabpanel' aria-labelledby='dd-h-w3' data-parent='#dd-trigger-w3')
+                .card-body.text-left
+                  img(src='/img/w-cert.jpg' alt='MOS Certificate')
+                  p William is a certified Microsoft Office Specialist.
+                  p
+                    | In his own time he uses online learning platforms for learning subjects which he finds interesting. These include Java, Web Design and Web Development.
+    .row
+      .col-lg-9.info
+        br
+        p
+          | DrumDev is a platform we have set up to mess about with web design features and practice working on improving our skills. It&rsquo;s a bit of fun with the potential of being took further in the future.
+          | Future plans could be to run a web design and web development company offering various
+          | services. Teaching people in the community how to code is also a possibility.
+        br
+    a.smooth-scroll.btn.btn-secondary.drum-btn(href='#our-work') Find out more
+  #our-work.container-fluid.content
+    .limiter
+      h2 Our Work
+      .row.our-work-slick
+        .col-lg-4.project.first
+          h3 PressureClean-UK
+          img.img-on-device(src='/img/pressureclean-uk-devices.png' alt='Pressureclean-uk')
+          p
+            | Created in April 2018 for a friend. Designed and created completely from scratch.
+          a.smooth-scroll.btn.btn-secondary.drum-btn(href='http://www.pressureclean-uk.co.uk' target='_blank') Visit Site
+        .col-lg-4.project.first
+          h3 CMS Blog Site
+          img.img-on-device(src='/img/ryan-site-devices.png' alt='Weegie in the toon!')
+          p
+            | Created in early 2018 for a friend using Webflow. It is a site for posting blogs and uses a Content Management System.
+          a.smooth-scroll.btn.btn-secondary.drum-btn(href='http://ryan-bounagui.webflow.io/' target='_blank') Visit Site
+        .col-lg-4.project.first
+          h3 Shannexx Photography
+          img.img-on-device(src='/img/shannexx-devices.png' alt='Shannexx Photography')
+          p
+            | Created in January 2018 for a friend using Webflow. Photography is her hobby and this helps to boost her online presence.
+          a.smooth-scroll.btn.btn-secondary.drum-btn(href='https://shannexx-photography.webflow.io' target='_blank') Visit Site
+        .col-lg-4.project
+          h3 Drumchapel Foodbank
+          img.img-on-device(src='/img/dfb-devices.png' alt='Drumchapel Foodbank')
+          p
+            | Zander&apos;s first ever project made from scratch while helping out at DFB. Currently not in use but can still be viewed.
+          a.smooth-scroll.btn.btn-secondary.drum-btn(href='https://drumdev.github.io/foodbank' target='_blank') Visit Site
+        .col-lg-4.project
+          h3 CCTV Scotland
+          img.img-on-device(src='/img/cctv-devices.png' alt='CCTV Scotland')
+          p
+            | This is a fictional CCTV company that was made for practice with Bootstrap. Thought I&apos;d share it anyway.
+          a.smooth-scroll.btn.btn-secondary.drum-btn(href='https://drumdev.github.io/CCTV' target='_blank') Visit Site
+        .col-lg-4.project.last
+          h3 Save Small Tribes Trust
+          img.img-on-device(src='/img/tr-devices.png' alt='Save Small Tribes Trust')
+          p
+            | Started in 2016 for a family friend but never received any content so it was stopped at an early stage.
+          a.smooth-scroll.btn.btn-secondary.drum-btn(href='https://drumdev.github.io/Tribes' target='_blank') Visit Site
+      br
+  #latest-news.container-fluid.content.blue-bg
+    .limiter
+      h2 Latest News
+      .row.latest-news-slick
+        .col-sm-6.col-lg-3
+          .card.odd
+            img.card-img-top(src='/img/hello.jpg' alt='First Blog Image')
+            .card-body
+              h4.card-title And we are live!
+              p.card-text
+                | DrumDev is now online! Visit our Wordpress Blog to read our first ever blog post.
+              a.btn.btn-secondary.drum-btn(href='https://drumdevs.wordpress.com/2017/10/08/and-we-are-live/' target='_blank') Visit Blog
+              p.card-text
+                small.text-muted Posted on 08/10/17
+        .col-sm-6.col-lg-3
+          .card.even
+            img.card-img-top(src='/img/first.jpg' alt='First Steps Image')
+            .card-body
+              h4.card-title First steps...
+              p.card-text
+                | Read this blog post to find out more about the initial plans we have lined up for DrumDev.
+              a.btn.btn-secondary.drum-btn(href='https://drumdevs.wordpress.com/2017/10/09/first-steps/' target='_blank') Visit Blog
+              p.card-text
+                small.text-muted Posted on 09/10/17
+        .col-sm-6.col-lg-3
+          .card.odd
+            img.card-img-top(src='/img/struggle3.jpg' alt='Inspirations Image')
+            .card-body
+              h4.card-title Inspirations
+              p.card-text
+                | This post talks about people we admire for their hard work while facing struggles.
+              a.btn.btn-secondary.drum-btn Visit Blog
+              p.card-text
+                small.text-muted Coming Soon
+        .col-sm-6.col-lg-3
+          .card.even
+            img.card-img-top(src='/img/faq.jpg' alt='Frequently Asked Questions Image')
+            .card-body
+              h4.card-title DrumDev FAQ
+              p.card-text Find answers to questions you might have in our Frequently Asked Questions post.
+              a.btn.btn-secondary.drum-btn Visit Blog
+              p.card-text
+                small.text-muted Coming Soon
+  footer#contact-us
+    .container-fluid.content
+      .limiter
+        h2 Contact Us
+        p
+          | Email us at 
+          a.link(href='mailto:contact@DrumDev.co.uk') contact@DrumDev.co.uk
+        a(href='https://www.facebook.com/DrumDevs' target='_blank')
+          img.social(src='/img/fb.svg' alt='Facebook')
+        a(href='https://www.twitter.com/DrumDevs' target='_blank')
+          img.social(src='/img/tw.svg' alt='Twitter')
+        a(href='https://drumdevs.wordpress.com' target='_blank')
+          img.social(src='/img/wp.svg' alt='Wordpress')
+        a(href='https://github.com/drumdev' target='_blank')
+          img.social(src='/img/gh.svg' alt='Github')
+        p
+          a.link.smooth-scroll(href='#top') Return to top
+        p.text-muted  &copy; 2018 DrumDev.co.uk 

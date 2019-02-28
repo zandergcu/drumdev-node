@@ -1,0 +1,6 @@
+/***** Remove Default Browser Styles *****/
+html, body, div, section, ul, li, input, button, td, tr, table, span, button, article, h1, h2, h3, p {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
