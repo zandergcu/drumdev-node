@@ -11,7 +11,7 @@ function css() {
 }
 
 function js() {
-  return src(['js/jquery-old.js', 'js/popper.js', 'js/bootstrap-old.js', 'js/slick.js', 'js/js.js'], { sourcemaps: true })
+  return src(['js/jquery.js', 'js/popper.js', 'js/bootstrap.min.js', 'js/slick.js', 'js/js.js'], { sourcemaps: true })
     .pipe(concat('app.min.js'))
     .pipe(dest('public/build', { sourcemaps: true }))
 }
