@@ -1,7 +1,19 @@
-const { src, dest, parallel } = require('gulp');
+const { src, dest, parallel, watch } = require('gulp');
 const sass = require('gulp-sass');
 const minifyCSS = require('gulp-csso');
 const concat = require('gulp-concat');
+
+const watcher = watch(['sass/**/*.scss']);
+
+watcher.on('change', function(path, stats) {
+  console.log(`File ${path} was changed`);
+  css();
+});
+
+watcher.on('add', function(path, stats) {
+  console.log(`File ${path} was removed`);
+  css();
+});
 
 function css() {
   return src('sass/main.scss')
