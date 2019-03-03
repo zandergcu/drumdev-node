@@ -1,0 +1,174 @@
+
+
+/* Hero */
+
+
+#hero{
+    background-image:url(/img/banner-blue-hq.jpg);
+    background-size:cover;
+    padding-top:70px;
+}
+.blue-bg{
+    background:$light-blue;
+}
+
+#hero h1{
+    color:$soft-white;
+    padding-bottom:30px;
+}
+
+/* What We Do */
+
+#what-we-do p{
+    padding:2px;
+    text-align:left;
+}
+#what-we-do ul li{
+    max-width:230px;
+    margin:0 auto;
+}
+#what-we-do p.text-center{
+    margin: 20px auto;
+}
+#what-we-do h3{
+    text-align:left;
+    margin: 0 auto;
+    max-width:230px;
+}
+
+
+/* Who We Are */
+
+#who-we-are ul{
+    margin-left:10%;
+}
+#who-we-are .card{
+    max-width:500px;
+    margin:0 auto;
+}
+#who-we-are .card-header {
+    padding: 5px;
+}
+#who-we-are .card a{
+    color:$dark-blue;
+}
+.dp{
+    margin-bottom:20px;
+}
+#who-we-are .info{
+    margin:0 auto;
+}
+#dd-content-w3 img{
+    display:block;
+    margin:0 auto 20px auto;
+}
+
+
+/* Our Work */
+
+#our-work .project{
+    margin:0 0 15px 0;
+}
+.img-on-device{
+    width:100%;
+    max-width:500px;
+    margin-bottom:20px!important;
+}
+#latest-news .card{
+    width:70%;
+    margin:0 auto;
+}
+#latest-news .slick-next {
+    right: 5px;
+    z-index:1;
+}
+#latest-news .slick-prev {
+    left: 5px;
+    z-index:1;
+}
+
+/* Bootstraps Media Queries */
+
+@media screen and (min-width: 576px){
+
+    #hero{
+        padding-top:100px;
+    }
+    #what-we-do ul{
+        margin-left:0;
+    }
+    #latest-news .card{
+        width:80%;
+    }
+    #latest-news .card.odd{
+        margin-left:20%;
+    }
+    #latest-news .card.even{
+        margin-right:20%;
+    }
+    #latest-news .slick-next {
+        right: 5px;
+        z-index:1;
+    }
+    #latest-news .slick-prev {
+        left: 5px;
+        z-index:1;
+    }
+}
+@media screen and (min-width: 767px){
+    #what-we-do ul li{
+        max-width:260px;
+    }
+}
+@media screen and (min-width: 992px){
+    #our-work .project{
+        padding:0 30px;
+        margin:0 auto;
+    }
+    .img-on-device{
+        width:100%;
+        max-width:500px;
+        margin:20px auto!important;
+    }
+    #what-we-do p{
+        text-align:left;
+    }
+    #what-we-do ul li{
+        max-width:none;
+        margin:0;
+    }
+    #latest-news .card{
+        width:100%;
+    }
+    #latest-news .card.odd{
+        margin-left:0;
+    }
+    #latest-news .card.even{
+        margin-right:0;
+    }
+}
+@media screen and (min-width: 1200px){
+    .img-on-device {
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    #hero{
+        height:500px;
+        padding-top:180px;
+    }
+}
+
+/* Min heights for latest news card text to keep them equal heights. Redo with flex eventually */
+@media screen and (min-width: 992px) and (max-width:1040px){
+    #latest-news .card-title + .card-text{
+        min-height:115px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width:1290px){
+    #latest-news .card-title + .card-text{
+        min-height:100px;
+    }
+}

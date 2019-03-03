@@ -191,7 +191,7 @@
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: $white;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -294,7 +294,7 @@
 .slick-dots li button:focus:before
 {
     opacity: 1;
-    color:#1c2a4d;
+    color:$dark-blue;
 }
 .slick-dots li button:before
 {
@@ -313,7 +313,7 @@
     text-align: center;
 
     opacity: .75;
-    color: #a5c7e2;
+    color: $light-blue;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -321,5 +321,5 @@
 .slick-dots li.slick-active button:before
 {
     opacity: 1;
-    color: #1c2a4d;
+    color: $dark-blue;
 }

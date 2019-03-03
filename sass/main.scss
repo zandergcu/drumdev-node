@@ -1,6 +1,10 @@
 
-@import "partials/reset";
 @import "vendor/bootstrap";
+@import "partials/variables";
+@import "partials/reset";
 @import "vendor/slick";
 @import "modules/fonts";
 @import "partials/base";
+@import "partials/maincontent";
+@import "partials/nav";
+@import "partials/footer";
