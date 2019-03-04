@@ -1,113 +1,91 @@
-/* I am going to completely recreate the navigation as I don't like the current ones code - or the mobile dropdown */
 
-.navbar-brand{
+nav{
+  width:100%;
+  display:block;
+  position:relative;
+  background-color:transparent;
+  display:block;
+  float:left;
+  transition: background-color .4s ease-in-out;
+  &.is-active{
+    background-color: darken($dark-blue , 5%)
+  }
+  .limiter{
+    padding: 10px 0 21px 0;
+    float: left;
+    display: block;
+    width: 100%;
+  }
+}
+
+.logo{
   font-family: $drumdev-font; /* Turn into image eventually to save loading a whole font */
 }
-.navbar{
-    background:transparent;
-    position: absolute;
-    top:0;
-    left:0;
+
+.nav-brand{
+  display:block;
+  margin-left:40%;
+  transform:translateX(-50%);
+  float:left;
+  color:$white;
+  font-size:1.3rem;
+  padding-top:5px;
+  &:hover{
+    text-decoration: none;
+    color:$white;
+  }
 }
-.navbar a{
-    color:$soft-white;
+
+.hamburger{
+  position: absolute;
+  left: 67%;
+  top:5px;
 }
-.navbar-toggler{
-    cursor: pointer;
+
+.nav-items{
+  clear:both;
+  background-color: $dark-blue;
+  width:100%;
+  max-width:0;
+  position: absolute;
+  top:66px;
+  left:0;
+  overflow:hidden;
+  transition: max-width .4s ease-in-out;
+  ul{
+    a{
+      li{
+        padding:12px;
+        color: $white;
+        list-style: none;
+        min-width:120px;
+        background-color:$dark-blue;
+        &.logo{
+          font-size:20px;
+        }
+      }
+      &:hover li{
+        color:$light-blue;
+      }
+    }
+  }
+  &.is-active{
+    max-width:100%;
+  }
 }
-.navbar-nav li{
-    background:$dark-blue;
-}
-.navbar-nav li:hover{
-    background:$light-blue;
-}
-.navbar-nav li:hover a{
-    color:$black;
-}
+
+
+
 
 /* Bootstraps Media Queries */
 
 @media screen and (min-width: 576px){
-    .navbar {
-        right: 0;
-        display: block;
+    nav{
+      position:absolute;
+      left:0;
+      top:0;
     }
-    .navbar-brand{
-        float: left;
-    }
-    .navbar-expand-sm .navbar-collapse {
-        float: right;
-    }
-    .navbar-nav li{
-        background:transparent;
-    }
-    .navbar-nav li:hover{
-        background:transparent;
-    }
-    .navbar li:hover a{
-        color:$light-blue;
-    }
-}
-
-@media screen and (min-width: 767px){
-    .navbar-brand {
-        padding-left: 50px;
-    }
-    .navbar-expand-sm .navbar-collapse {
-        padding-right:50px;
-    }
-}
-
-@media screen and (min-width: 992px){
-    .navbar-brand {
-        padding-left: 100px;
-    }
-    .navbar-expand-sm .navbar-collapse {
-        padding-right:100px;
-    }
-}
-
-@media screen and (min-width: 1400px){
-    .navbar-brand{
-        font-size:2rem;
-    }
-    .navbar-nav li{
-        font-size:1.25rem;
-    }
-    .navbar-nav{
-        padding-top:10px;
-    }
-}
-
-/* Custom Media Queries (the less of these - the better) */
-
-@media screen and (max-width: 575px){
-    .navbar{
-        padding-left:0;
-        padding-right:0;
-        right:0;
-    }
-    .navbar-brand{
-        margin-left:15px;
-    }
-    .navbar-toggler{
-        margin-right:15px;
-        background:$footer-purple;
-    }
-    .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-    }
-    .navbar-toggler:focus{
-        outline:none;
-
-    }
-    .navbar-toggler.collapsed{
-        background:$light-blue;
-    }
-}
-@media screen and (min-width:576px) and (max-width:620px){
-    .navbar-nav li {
-        font-size: 0.9rem;
-        padding-top: 2px;
+    .hamburger{
+      display:none;
     }
 }

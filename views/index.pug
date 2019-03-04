@@ -2,30 +2,30 @@ extends layout
 
 block content
   
-  nav#top.navbar.navbar-expand-sm
+  nav
     .limiter
-      a.navbar-brand(href='#') &lt; DrumDev /&gt;
-      button.navbar-toggler.collapsed(type='button' data-toggle='collapse' data-target='#navbarText' aria-controls='navbarText' aria-expanded='false' aria-label='Toggle navigation')
-        span.navbar-toggler-icon
-      button.hamburger.hamburger--minus.is-active(type="button")
+      a.nav-brand.logo(href="#") &lt; DrumDev /&gt;
+      
+      button.hamburger.hamburger--minus(type="button")
         span.hamburger-box
           span.hamburger-inner
+            
+    .nav-items  
+      ul
+        a.smooth-scroll(href='#what-we-do')
+          li What We Do
+        a.smooth-scroll(href='#who-we-are')
+          li Who We Are
+        a.smooth-scroll(href='#our-work')
+          li Our Work
+        a.smooth-scroll(href='#latest-news')
+          li News
+        a.smooth-scroll(href='#contact-us') 
+          li Contact
 
-      #navbarText.collapse.navbar-collapse
-        ul.navbar-nav.mr-auto
-          li.nav-item
-            a.nav-link.smooth-scroll(href='#what-we-do') What We Do
-          li.nav-item
-            a.nav-link.smooth-scroll(href='#who-we-are') Who We Are
-          li.nav-item
-            a.nav-link.smooth-scroll(href='#our-work') Our Work
-          li.nav-item
-            a.nav-link.smooth-scroll(href='#latest-news') News
-          li.nav-item
-            a.nav-link.smooth-scroll(href='#contact-us') Contact
   #hero.container-fluid.content
     .limiter
-      h1 Web Development Drumchapel
+      h1 Web Development #[br ]Drumchapel
       a.smooth-scroll.btn.btn-secondary.drum-btn(href='#what-we-do') Find out more
   #what-we-do.container-fluid.content
     .limiter
